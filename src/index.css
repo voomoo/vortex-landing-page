@@ -1,0 +1,311 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@700;900&display=swap");
+
+* {
+  margin: 0px;
+  border: 0px;
+  box-sizing: border-box;
+}
+
+.navbar {
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  z-index: 50;
+}
+
+nav {
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f3f9fb;
+  z-index: 50;
+  padding: 0px 60px;
+}
+
+nav img {
+  height: 40px;
+  cursor: pointer;
+}
+
+nav a {
+  margin-right: 40px;
+  color: #474f85;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #f3ecd3;
+}
+
+nav .nav-button {
+  color: #474f85;
+  border: 1px solid #474f85;
+  background: #f3f9fb;
+}
+
+nav .nav-button:hover {
+  color: #f3f9fb;
+  border: 1px solid #f3f9fb;
+  background: #474f85;
+}
+
+.nav-mobile {
+  display: none;
+}
+
+.nav-mobile img {
+  height: 40px;
+  cursor: pointer;
+}
+
+.hero-section {
+  margin-top: 80px;
+  padding: 10px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #474f85;
+  height: 70vh;
+}
+
+.hero-section img {
+  height: 95%;
+  position: relative;
+  top: 60px;
+  border-radius: 2px;
+}
+
+.textual {
+  width: 35%;
+  color: #f3f9fb;
+}
+
+.textual hr {
+  background-color: #f3f9fb;
+  height: 1px;
+  width: 100px;
+}
+
+.textual h1 {
+  color: #f3f9fb;
+  font-weight: 800;
+  font-size: 3vw;
+  font-family: "Merriweather", serif;
+}
+
+.textual .hero-btn {
+  background-color: #474f85;
+  color: #f3f9fb;
+}
+
+.textual .hero-btn:hover {
+  background: #f3f9fb;
+  border: 1px solid #f3f9fb;
+  color: #474f85;
+}
+
+.feature-section {
+  margin: 100px 100px;
+}
+
+.feature-section hr {
+  background-color: #474f85;
+  height: 1px;
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+.feature-section h1 {
+  font-size: 2.5em;
+  font-family: "Merriweather", serif;
+}
+
+.feature-card {
+  width: 300px;
+}
+
+.feature-card .icon {
+  height: 50px;
+  width: 50px;
+  background-color: #6e7c7c;
+  color: #f3f9fb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 24px;
+  margin: 15px 0px;
+}
+
+.feature-card-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.more {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 100px;
+  background: #474f85;
+  padding: 30px 40px 10px 40px;
+  border-radius: 3px;
+}
+
+.more h1 {
+  font-size: 2.5em;
+  color: #f3f9fb;
+  font-family: "Merriweather", serif;
+}
+
+.more .more-btn {
+  background-color: #474f85;
+  color: #f3f9fb;
+}
+
+.more .more-btn:hover {
+  background: #f3f9fb;
+  border: 1px solid #f3f9fb;
+  color: #474f85;
+}
+
+.footer {
+  background-color: #f3f9fb;
+  padding: 10px 100px;
+  margin-top: 60px;
+}
+
+.name img {
+  height: 50px;
+  margin: 20px 0px;
+}
+
+.footer hr {
+  height: 1px;
+  background-color: #474f8565;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.footer .other-links .footer-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-col p {
+  color: #6e7c7c;
+}
+
+.footer-col a {
+  color: #474f85;
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    display: none;
+  }
+  .nav-mobile {
+    display: inline-block;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f3f9fb;
+    z-index: 50;
+    padding: 0px 40px;
+    font-size: 24px;
+  }
+
+  .hero-section {
+    flex-direction: column-reverse;
+    margin: 0px;
+    margin-top: 60px;
+    height: auto;
+    width: 100%;
+    padding: 0px;
+    padding-bottom: 20px;
+  }
+
+  .hero-section img {
+    position: static;
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+  }
+
+  .hero-section hr {
+    display: none;
+  }
+
+  .hero-section .textual {
+    width: 100%;
+    padding: 0px 30px;
+    text-align: center;
+  }
+
+  .hero-section .textual h1 {
+    font-size: 2em;
+  }
+
+  .feature-section {
+    margin: 30px;
+  }
+
+  .feature-section hr {
+    margin: 10px auto;
+  }
+
+  .feature-section h1 {
+    text-align: center;
+  }
+
+  .feature-card-group {
+    flex-direction: column;
+  }
+
+  .feature-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .feature-card p {
+    text-align: center;
+  }
+
+  .more {
+    margin: 0px;
+    flex-direction: column;
+    padding-bottom: 30px;
+  }
+
+  .more h1 {
+    text-align: center;
+  }
+
+  .footer {
+    margin: 0px;
+    padding: 0px;
+    padding-top: 20px;
+  }
+
+  .footer-col {
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+  }
+
+  .name {
+    display: flex;
+    justify-content: center;
+  }
+}
