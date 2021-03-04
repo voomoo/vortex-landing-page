@@ -22,7 +22,7 @@ const Navbar = () => {
   return (
     <div className="navbar" data-aos="fade-down" data-aos-duration="1000">
       <nav>
-        <img src={logo} alt="" />
+        <img src={logo} alt="logo" />
         <div className="links">
           <a href="/">HOW WE WORK</a>
           <a href="/">BLOG</a>
@@ -34,7 +34,7 @@ const Navbar = () => {
         <img src={logo} alt="" />
         <MenuFoldOutlined onClick={showDrawer} />
         <Drawer
-          title={<img src={logo} height="40px" />}
+          title={<img src={logo} height="40px" alt="logo" />}
           placement="right"
           closable={false}
           onClose={onClose}
